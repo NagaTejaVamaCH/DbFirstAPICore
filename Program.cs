@@ -21,7 +21,8 @@ public class Program
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Information()
             .WriteTo.File("Log/LoggerInfo-.txt", rollingInterval: RollingInterval.Minute)
-            .CreateLogger();            
+            .CreateLogger();
+        //Next we need to lear Exception handler test
 
         var app = builder.Build();
 
