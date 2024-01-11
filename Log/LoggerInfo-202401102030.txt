@@ -1,0 +1,11 @@
+2024-01-10 20:30:14.997 -08:00 [INF] Clients :[{"Id":1,"Name":"GVK","Application":null},{"Id":2,"Name":"Jiva","Application":null},{"Id":3,"Name":"Ratna","Application":null},{"Id":4,"Name":"IBM","Application":null}]
+2024-01-10 20:30:17.709 -08:00 [INF] Clients :[{"Id":1,"Name":"GVK","Application":null},{"Id":2,"Name":"Jiva","Application":null},{"Id":3,"Name":"Ratna","Application":null},{"Id":4,"Name":"IBM","Application":null}]
+2024-01-10 20:30:18.944 -08:00 [INF] Clients :[{"Id":1,"Name":"GVK","Application":null},{"Id":2,"Name":"Jiva","Application":null},{"Id":3,"Name":"Ratna","Application":null},{"Id":4,"Name":"IBM","Application":null}]
+2024-01-10 20:30:19.563 -08:00 [INF] Clients :[{"Id":1,"Name":"GVK","Application":null},{"Id":2,"Name":"Jiva","Application":null},{"Id":3,"Name":"Ratna","Application":null},{"Id":4,"Name":"IBM","Application":null}]
+2024-01-10 20:30:19.786 -08:00 [INF] Clients :[{"Id":1,"Name":"GVK","Application":null},{"Id":2,"Name":"Jiva","Application":null},{"Id":3,"Name":"Ratna","Application":null},{"Id":4,"Name":"IBM","Application":null}]
+2024-01-10 20:30:20.010 -08:00 [INF] Clients :[{"Id":1,"Name":"GVK","Application":null},{"Id":2,"Name":"Jiva","Application":null},{"Id":3,"Name":"Ratna","Application":null},{"Id":4,"Name":"IBM","Application":null}]
+2024-01-10 20:30:20.242 -08:00 [INF] Clients :[{"Id":1,"Name":"GVK","Application":null},{"Id":2,"Name":"Jiva","Application":null},{"Id":3,"Name":"Ratna","Application":null},{"Id":4,"Name":"IBM","Application":null}]
+2024-01-10 20:30:31.479 -08:00 [INF] Client Name : IBM with Id : 4
+2024-01-10 20:30:34.659 -08:00 [INF] Client Name : IBM with Id : 4
+2024-01-10 20:30:35.497 -08:00 [INF] Client Name : IBM with Id : 4
+2024-01-10 20:30:36.364 -08:00 [INF] Client Name : IBM with Id : 4

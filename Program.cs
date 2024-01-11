@@ -1,5 +1,6 @@
 
 using dbhealthcare.Models;
+using Serilog;
 
 namespace dbhealthcare;
 
@@ -16,6 +17,12 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddDbContext<DbfsthelathCareContext>();
+
+        Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Information()
+            .WriteTo.File("Log/LoggerInfo-.txt", rollingInterval: RollingInterval.Minute)
+            .CreateLogger();            
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

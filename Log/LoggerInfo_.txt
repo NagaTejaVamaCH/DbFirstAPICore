@@ -1,0 +1,4 @@
+2024-01-10 20:24:25.804 -08:00 [INF] Client Name : Ratna with Id : 3
+2024-01-10 20:25:16.534 -08:00 [INF] Clients :[{"Id":1,"Name":"GVK","Application":null},{"Id":2,"Name":"Jiva","Application":null},{"Id":3,"Name":"Ratna","Application":null},{"Id":4,"Name":"IBM","Application":null}]
+2024-01-10 20:25:18.444 -08:00 [INF] Clients :[{"Id":1,"Name":"GVK","Application":null},{"Id":2,"Name":"Jiva","Application":null},{"Id":3,"Name":"Ratna","Application":null},{"Id":4,"Name":"IBM","Application":null}]
+2024-01-10 20:25:19.432 -08:00 [INF] Clients :[{"Id":1,"Name":"GVK","Application":null},{"Id":2,"Name":"Jiva","Application":null},{"Id":3,"Name":"Ratna","Application":null},{"Id":4,"Name":"IBM","Application":null}]
