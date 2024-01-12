@@ -1,4 +1,5 @@
 
+using dbhealthcare.Filters;
 using dbhealthcare.Models;
 using Serilog;
 
@@ -17,12 +18,12 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddDbContext<DbfsthelathCareContext>();
+        builder.Services.AddExceptionHandler<GlobalExceptionHandler>().AddProblemDetails();
 
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Information()
             .WriteTo.File("Log/LoggerInfo-.txt", rollingInterval: RollingInterval.Minute)
             .CreateLogger();
-        //Next we need to lear Exception handler test
 
         var app = builder.Build();
 
@@ -32,12 +33,12 @@ public class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-
+        app.UseExceptionHandler();
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
-
-
+        
+        
         app.MapControllers();
 
         app.Run();
