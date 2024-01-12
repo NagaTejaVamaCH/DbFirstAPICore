@@ -37,7 +37,8 @@ public class ClientsController : ControllerBase
         var result = await _dbfsthelathCareContext.Clients.Where(c => c.Id == clientId).FirstOrDefaultAsync();
         if(result == null)
         {
-            return NotFound();
+            string str = $"No records found With the clinetId: {clientId}";
+            throw new ArgumentNullException(str);
         }
         Log.Information("Client Name : {Name} with Id : {Id}",result.Name,result.Id);
         return Ok(result);
