@@ -17,7 +17,7 @@ public partial class DbfsthelathCareContext : DbContext
 
     public virtual DbSet<Client> Clients { get; set; }
 
-    public virtual DbSet<Template> Templates { get; set; }
+    public virtual DbSet<Template> Template { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer(_configuration.GetConnectionString("ConnHealthcare"));
@@ -66,7 +66,7 @@ public partial class DbfsthelathCareContext : DbContext
         {
             entity.HasKey(e => e.Id).HasName("PK__template__3213E83FF1001CAA");
 
-            entity.ToTable("templates");
+            entity.ToTable("template");
 
             entity.Property(e => e.Id)
                 .ValueGeneratedOnAdd()
@@ -80,7 +80,7 @@ public partial class DbfsthelathCareContext : DbContext
             entity.HasOne(d => d.IdNavigation).WithOne(p => p.Template)
                 .HasForeignKey<Template>(d => d.Id)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__templates__appId__3C69FB99");
+                .HasConstraintName("FK__template__appId__3C69FB99");
         });
 
         OnModelCreatingPartial(modelBuilder);
