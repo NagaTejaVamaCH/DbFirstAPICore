@@ -1,7 +1,9 @@
-﻿using dbhealthcare.Models;
+﻿using System.Text.Json.Serialization;
+using dbhealthcare.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace dbhealthcare.Controllers;
 [Route("api/[controller]")]
@@ -23,6 +25,7 @@ public class ClientsController : ControllerBase
         {
             return NotFound();
         }
+        Log.Information("Clients :" + Newtonsoft.Json.JsonConvert.SerializeObject(result));
         return Ok(result);
     }
 
@@ -36,6 +39,7 @@ public class ClientsController : ControllerBase
         {
             return NotFound();
         }
+        Log.Information("Client Name : {Name} with Id : {Id}",result.Name,result.Id);
         return Ok(result);
     }
 
